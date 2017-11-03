@@ -1,5 +1,6 @@
-#intro-text {
+.intro-text {
     font-family: 'Amatic SC', cursive;
+    align-content: center;
 }
 
 #profile-pic {
