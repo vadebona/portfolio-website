@@ -1,3 +1,9 @@
-intro-text {
+#intro-text {
     font-family: 'Amatic SC', cursive;
+}
+
+#profile-pic {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
 }
