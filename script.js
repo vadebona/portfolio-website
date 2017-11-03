@@ -1,23 +1,3 @@
-$(function aboutSection() {
-   $.scrollify({
-       section: '#about',
-   });
-});
+$(document).ready(function() {
 
-$(function projectsSection() {
-   $.scrollify({
-       section: '#projects',
-   });
-});
-
-$(function contactSection() {
-   $.scrollify({
-       section: '#contact',
-   });
-});
-
-$(function sourcesSection() {
-   $.scrollify({
-       section: '#sources',
-   });
 });
