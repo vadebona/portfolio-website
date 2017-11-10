@@ -6,59 +6,105 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta charset="UTF-8">
         <meta name="author" content="Victoria Adebona">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" href="font-awesome.min.css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
         <!-- JavaScript stuff -->
-        <script type="text/javascript" src="app.js"\></script>
+        <script type="text/javascript" src="script.js"\></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#sources">Sources</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#extracurriculars">Extracurriculars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <div class="intro">
-            <img id="profile-pic" src="m.jpg"/>
-            <h1 class="intro-text">Hey there. I'm Victoria, but you can call me Vicky.</h1>
+        <div class="main" id="intro">
+            <section>
+                <div id="intro-backg"><h1 class="intro-text">Hey there. I'm Victoria, but you can call me Vicky.</h1></div>
+            </section>
         </div>
 
-        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-        <section class="about">
-            <h2>About Me.</h2>
-            <p>Hello! I'm currently a fourth year computer science major at UCI.</p>
-        </section>
-        <hr>
+        <div class="main" id="about">
+            <div class="parallax">
+                <section>
+                    <div id="about-box">
+                        <h2>About Me.</h2>
+                        <p>
+                            Hello! I'm currently a fourth year computer science major at UCI. I'm originally from South Central Los Angeles, but I tell everyone that I'm fron Inglewood because I live a few short blocks from the border.
+                        </p>
 
-        <section class="projects">
-            <h2>Projects.</h2>
-            <p> Here are some projects I worked on recently: </p>
+                        <br>
 
-            <h4>FloodBako</h4>
-            <h4>FabFlix</h4>
-            <h4>Health Combinder</h4>
-        </section>
-        <hr>
+                        <p>
+                            I have a computer science background (data structures, algorithms, object-oriented programming, etc.), but my real interests lie in front-end web and mobile development. With other aspects of coding that usually happen behind the scenes, I rarely get to see much of what happens on the outside from the user's perspective. I believe that with front-end development, I can design and develop programs that actually interact with the user and put users' needs first. The design and user interface of a website is what a user sees first when they search up a URL, and I want contributing to that to be the center of my career.
+                        </p>
 
-        <section class="contact">
-            <h2>In case you wanted to get a hold of me:</h2>
-            <h4>Email: </h4>
-            <p><a href="mailto:vadebona411@gmail.com">vadebona411@gmail.com</a></p>
-            <h4><a href="http://www.linkedin.com/in/victoriaadebona">LinkedIn</a></h4>
-        </section>
+                        <br>
 
-        <section id="sources"></section>
+                        <h4>Hobbies.</h4>
+                        <p>
+                            Aside from programming, I'm also interested in reading articles about the Internet of Things. <a href="http://thenextweb.com">The Next Web</a> is one of my favorite websites to go to for udpates in the industry. During some of my spare time, I like playing music. I play the keyboard, and I recently picked up drums, ukulele, and some guitar.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="main" id="experience">
+            <section>
+                <h2>Experience.</h2>
+                <h4>Athletics IT</h4>
+                <p> I currently work for UCI's Athletics IT Department as a student application developer.</p>
+
+                <h4>AppCamp</h4>
+                <p> In the summer of 2016, I was a mentor for AppCamp. AppCamp is a summer program that UCI holds with the engineering and Information and Computer Sciences schools to teach middle school kids in the OC area about computer science concepts.</p>
+            </section>
+        </div>
+
+        <div class="main" id="projects">
+            <section >
+                <h2>Projects.</h2>
+                <p> Here are some projects I worked on recently: </p>
+
+                <h4>FloodBako</h4>
+                <h4>FabFlix</h4>
+                <h4>Health Combinder</h4>
+            </section>
+        </div>
+
+        <div class="main" id="extracurriculars">
+            <section>
+                <h2>Extracurriculars.</h2>
+                <h4>Women in Information and Computer Sciences (WICS)</h4>
+                <h4>Acts2Fellowship</h4>
+            </section>
+        </div>
+
+        <div class="main" id="contact">
+            <section>
+                <h2>Contact.</h2>
+                <div class="icons">
+                    <a href="mailto:vadebona411@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com/in/victoriaadebona"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/vadebona"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <br>
+                <strong><a href="#intro">Back to top ^</a></strong>
+            </section>
+        </div>
     </body>
 </html>
 
