@@ -32,9 +32,9 @@ p {
 }
 
 #name {
-    color: white;
     padding-bottom: 50px;
     flex-wrap: wrap;
+    font-size: 5em;
 }
 
 .nav-content a {
@@ -144,6 +144,34 @@ p {
 
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay, .closebtn {
+        position: fixed;
+        top: 20px;
+        right: 45px;
+        font-size: 40px;
+    }
+
     section {
         margin-left: 100px;
         margin-right: 100px;
@@ -156,22 +184,14 @@ p {
         font-size: 70px;
         cursor: pointer;
         float: right;
+        position: fixed;
     }
 
     .nav-content {
-        position: fixed;
         top: 25%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
-    }
-
-    #nav-menu {
-        background-color: black;
-    }
-
-    .overlay {
-        background-color: black;
     }
 
 }

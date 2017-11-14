@@ -4,7 +4,8 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("nav-menu").style.width = "100%";
+    document.getElementById("nav-menu").style.width = "0%";
+
 }
 
 $(document).ready(function(){
