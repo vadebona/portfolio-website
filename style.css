@@ -1,93 +1,185 @@
-html, body,.main {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,.main {
     height: 100%;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5em;
+    font-family: 'Fauna One', serif;
+    background-color: lightgrey;
 }
 
 h1, h4 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Sansita', sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    font-family: 'Fjalla One', sans-serif;
+h1 {
+    text-align: center;
+    font-size: 3em;
 }
 
-nav {
-    /* W3Schools Sidebar Navigation */
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left:0;
-    overflow-x: hidden;
-    padding-top: 400px;
-    /*padding-right: 50px;*/
-    padding-left: 0px;
-    background-color: darkslategray;
+h4 {
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#name {
+    color: white;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.nav-content a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+/* Desktop/Laptop Screens */
+@media only screen and (min-width :  1220px) {
+    #nav {
+        /* W3Schools Sidebar Navigation */
+        height: 100%;
+        width: 275px;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 100px;
+        padding-right: 15px;
+        border-right: 5px;
+        border-right-color: black;
+
+        background-color: black /*#8ed7ff*/;
+    }
+
+    .nav-content a {
+        padding-left: 70px;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+        display: block;
+    }
+
+    section {
+        min-height: 100%;
+        vertical-align: middle;
+
+        margin-left: 500px;
+        margin-right: 300px;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .closebtn {
+        display: none;
+    }
+
+
 }
 
 
-nav a:hover {
-    color: #818181;
+/* iPad/Tablet Screens */
+@media only screen and (min-width: 768px) and (max-width: 1220px) {
+    /* W3Schools Navigation: */
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    section {
+        margin-left: 150px;
+        margin-right: 150px;
+        vertical-align: middle;
+        position: relative;
+
+    }
+
+   .nav-content {
+        position: fixed;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    span {
+        font-size: 70px;
+        cursor: pointer;
+        float: right;
+        position: fixed;
+    }
+
+   .overlay, .closebtn {
+        position: fixed;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
 }
 
-nav a:visited {
-    color: black;
+
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    section {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 
-nav a {
-    padding: 0px 6px 6px 6px;
+/* W3Schools Navigation: */
+@media only screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+        background-color: black;
+    }
+    .overlay, .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+
+#nav a:hover {
+    color: #8ed7ff;
+}
+
+#nav a {
+    padding: 0px 10px 10px 10px;
     text-decoration: none;
     font-size: 1em;
-    color: black;
-    display: block;
-}
-
-nav a:active {
-    text-decoration: underline;
-}
-
-
-li {
-    text-align: center;
-    float: left;
-    padding-left: 70px;
+    color: white;
 }
 
 #intro {
     vertical-align: middle;
+    top: 0;
 }
 
-.intro-text {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    font-size: 1.5em;
-}
 
-#intro-backg {
-    background-color: black;
-    margin-left: 360px;
-    margin-right: 350px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-radius: 4px;
-}
-
-section {
-    min-height: 100%;
-    vertical-align: middle;
-    margin-left: 500px;
-    margin-right: 500px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
 
 p {
     padding: 0px;
@@ -98,15 +190,20 @@ a:link {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+a:visited {
+    color: blue;
 }
 
-
+#nav a:visited {
+    color: white;
+}
 
 /* Font Awesome icon styling */
 .icons {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    padding-top: 10px;
 }
 
 i {
@@ -114,20 +211,68 @@ i {
     color: black;
 }
 
+#home-button {
+   color: white;
+}
+
+#home-button:hover {
+    color: #8ed7ff;
+}
+
 /* W3Schools Parallaxing */
 
 .parallax {
-    /* The image used */
     background-image: url("m.jpg");
 
-    /* Set a specific height */
     height: 550px;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position:bottom  ;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
+#athletics, #wics-img, #a2f-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    /* to center things */
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+#app-img {
+    width: 150px;
+    height: 150px;
+}
+
+
+#ath-items, #app-items {
+    padding-top: 50px;
+}
+
+/* #ath-items h4, #app-items h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* For creating colums for experience */
+
+/*#ath-items, #app-items {
+    float: left;
+    width: 50%;
+}
+
+#exp-items:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+
 

@@ -11,65 +11,42 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One|Sansita" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
         <!-- JavaScript stuff -->
-        <script type="text/javascript">
-            // W3Schools Smoooth Scrolling:
-            $(document).ready(function(){
-              // Add smooth scrolling to all links
-              $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-
-                  // Store hash
-                  var hash = this.hash;
-
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                } // End if
-              });
-            });
-        </script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
 
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#extracurriculars">Extracurriculars</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="nav" class="overlay">
+            <span onclick="openNav()">&#9776;</span>
+            <h1 id="name">VICTORIA ADEBONA</h1>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-content">
+                    <a href="#intro"><i class="fa fa-home fa-1x" id="home-button" aria-hidden="true"></i></a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#projects">PROJECTS</a>
+                    <a href="#extracurriculars">EXTRACURRICULARS</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+
+        </div>
 
         <div class="main" id="intro">
             <div class="parallax">
                 <section>
-                    <div id="intro-backg"><h1 class="intro-text">Welcome</h1></div>
                 </section>
             </div>
         </div>
 
         <div class="main" id="about">
             <section>
-                    <h1>About Me.</h1>
+                    <h1>ABOUT ME.</h1>
                     <p>
                         Hello! I'm currently a fourth year computer science major at UCI. I'm originally from South Central Los Angeles, but I tell everyone that I'm fron Inglewood because I live a few short blocks from the border.
                     </p>
@@ -82,53 +59,83 @@
 
                     <br>
 
-                    <h4>Hobbies.</h4>
+                    <h4>HOBBIES.</h4>
                     <p>
-                        Aside from programming, I'm also interested in reading articles about the Internet of Things. <a href="http://thenextweb.com">The Next Web</a> is one of my favorite websites to go to for udpates in the industry. During some of my spare time, I like playing music. I play the keyboard, and I recently picked up drums, ukulele, and some guitar.
+                        Aside from programming, I'm also interested in reading articles about the Internet of Things. <a href="http://thenextweb.com">The Next Web</a> and <a href="http://theverge.com">The Verge</a> are some of my favorite websites to go to for udpates in the industry. During some of my spare time, I like playing music. I play the keyboard, and I recently picked up drums, ukulele, and some guitar.
                     </p>
             </section>
         </div>
 
         <div class="main" id="experience">
             <section>
-                <h1>Experience.</h1>
-                <h4>Athletics IT</h4>
-                <p> I currently work for UCI's Athletics IT Department as a student application developer.</p>
-
-                <h4>AppCamp</h4>
-                <p> In the summer of 2016, I was a mentor for AppCamp. AppCamp is a summer program that UCI holds with the engineering and Information and Computer Sciences schools to teach middle school kids in the OC area about computer science concepts.</p>
+                <h1>EXPERIENCE.</h1>
+                <div id="exp-items">
+                    <div id="ath-items">
+                        <img id="athletics" src="uciathletics.jpg">
+                        <h4>ATHLETICS IT</h4>
+                        <p> I currently work for UCI's Athletics IT Department as a student application developer. I just got the job, so I'm still getting used to how things work there. However, I know that I will be working on some of the web applications that a lot of the athletes and coaches use to manage their team finances and help facilitate the communication between each other. </p>
+                    </div>
+                    <div id="app-items">
+                        <img id="app-img" src="appcamp.png">
+                        <h4>APPCAMP</h4>
+                        <p> In the summer of 2016, I was a mentor for AppCamp. AppCamp is a week-long summer program that UCI holds with the engineering and Information and Computer Sciences schools to teach middle school kids in the OC area about computer science concepts. During this program, I mentored students between 6th and 9th grade as they learned how to use Scratch, Arduino, Scratch4Arduino, and AppInventor to apply what they have learned. These students would ultimately create an AppInventor app in teams by the end of the week and present them to their peers. It was a really rewarding experience, as I was about see the need for more kids to learn about computer science from a young age. I was also glad to participate since I didn't have a summer program like this in middle school.</p>
+                    </div>
+                </div>
             </section>
         </div>
 
         <div class="main" id="projects">
-            <section >
-                <h1>Projects.</h1>
-                <p> Here are some projects I worked on recently: </p>
+            <section>
+                <h1>PROJECTS.</h1>
 
-                <h4>FloodBako</h4>
-                <h4>FabFlix</h4>
-                <h4>Health Combinder</h4>
+                <br>
+
+                <h4>FLOODBAKO.</h4>
+                <p>This is a website that I'm helping my friend's mom design that helps people contribute to a Bakersfield Flood relief fund. The website is mainly built using WordPress, and I'm building upon the current design that is used and making it more modern using some of the tools that WordPress provides as well as some front-end code (if needed).</p>
+
+                <br>
+
+                <h4>FABFLIX.</h4>
+                <p> On a team of three, I helped to create a mock movies e-commerce website (I say mock because the movie check out process doesn't actually take any money or connect to a movie provider). This website used a MySQL database to hold all the information about the movies, as well as the account information of website users. Users could log into an account and search for movies by name or genre. We used an online server called Tomcat and Amazon Web Services to get our website online and did most of the front-end using Bootstrap. All sections of the application were connected using Java.</p>
+
+                <br>
+
+                <h4>HEALTH COMBINDER.</h4>
+                <p>On a team of student developers and a Graduate medical student, I participated in a two-week long UCI medical AppJam. We created an app that improves the communication between patients and their doctors. Patients would put some of the symptoms that they were suffering from (whether they were from medications that they were taking, a disease they were suffering from, etc) on a timeline in the application, and this timeline (by the patient's choice) would be parsed to create a document that would be sent to their doctors so that the doctor has all of that information in one place. This was an Android application so everything was built natively using Android Studio and Java.</p>
             </section>
         </div>
 
         <div class="main" id="extracurriculars">
             <section>
-                <h1>Extracurriculars.</h1>
-                <h4>Women in Information and Computer Sciences (WICS)</h4>
-                <h4>Acts2Fellowship</h4>
+                <h1>EXTRACURRICULARS.</h1>
+
+                <br>
+
+                <img src="wicslogo.png" id="wics-img">
+                <h4>WOMEN IN INFORMATION AND COMPUTER SCIENCES (WICS).</h4>
+                <p>WICS is a UCI professional/social organization that aims to empower, support and retain women in computer science and related fields. We do a lot of company events (info sessions, networking, etc.) and social events, and we even have our own mentorship and K-12 outreach programs. This club has changed my view of the role of women in computer science and has shown me a lot of what the computing field has to offer.</p>
+
+                <br>
+
+                <p>I served as a marketing committee member when I first joined WICS, and am now the Secretary. As a marketing committee member, I helped market our weekly events through social media, UCI email bulletins, and even physical posters located around campus. As the secretary of WICS, I send out weekly newsletter to all of our members, which account for the majority of our attendance at our events. I also take notes during board meetings and committee meetings, and manage our committee during events as we set up and take down. </p>
+
+                <br>
+
+                <img src="a2flogo2.jpg" id="a2f-img">
+                <h4>ACTS2FELLOWSHIP.</h4>
+                <p> Acts2Fellowship is an undergraduate Christian organization on the UCI campus (and on multiple campuses across the country). I currently serve as a student leader on the UCI campus, meeting students and teaching them about Christian life.</p>
             </section>
         </div>
 
         <div class="main" id="contact">
             <section>
-                <h1>Contact.</h1>
+                <h1>CONTACT.</h1>
                 <div class="icons">
-                    <a href="mailto:vadebona411@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                    <a href="http://www.linkedin.com/in/victoriaadebona"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://github.com/vadebona"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                    <a href="mailto:vadebona411@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com/in/victoriaadebona"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/vadebona"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </div>
                 <br>
-                <strong><a href="#intro">Back to top ^</a></strong>
             </section>
         </div>
     </body>
