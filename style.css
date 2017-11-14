@@ -44,18 +44,15 @@ p {
 
 /* Desktop/Laptop Screens */
 @media only screen and (min-width :  1220px) {
-    #nav {
+    #nav-menu {
         /* W3Schools Sidebar Navigation */
         height: 100%;
         width: 275px;
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
-        padding-top: 100px;
+        padding-top: 300px;
         padding-right: 15px;
-        border-right: 5px;
-        border-right-color: black;
-
         background-color: black /*#8ed7ff*/;
     }
 
@@ -87,7 +84,7 @@ p {
 
 /* iPad/Tablet Screens */
 @media only screen and (min-width: 768px) and (max-width: 1220px) {
-    /* W3Schools Navigation: */
+    /* Mostly inherited from W3Schools Navigation: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay */
     .overlay {
         height: 100%;
         width: 0;
@@ -112,17 +109,22 @@ p {
     section {
         margin-left: 150px;
         margin-right: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         vertical-align: middle;
         position: relative;
 
     }
 
+    br {
+        padding: 20px;
+    }
+
    .nav-content {
-        position: fixed;
         top: 25%;
         width: 100%;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     span {
@@ -145,7 +147,33 @@ p {
     section {
         margin-left: 100px;
         margin-right: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
     }
+
+    span {
+        font-size: 70px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .nav-content {
+        position: fixed;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #nav-menu {
+        background-color: black;
+    }
+
+    .overlay {
+        background-color: black;
+    }
+
 }
 
 /* W3Schools Navigation: */
@@ -159,15 +187,17 @@ p {
         top: 15px;
         right: 35px;
     }
+
+
 }
 
 
 
-#nav a:hover {
+#nav-menu a:hover {
     color: #8ed7ff;
 }
 
-#nav a {
+#nav-menu a {
     padding: 0px 10px 10px 10px;
     text-decoration: none;
     font-size: 1em;
@@ -219,7 +249,7 @@ i {
     color: #8ed7ff;
 }
 
-/* W3Schools Parallaxing */
+/* W3Schools Parallaxing: https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .parallax {
     background-image: url("m.jpg");
@@ -233,15 +263,15 @@ i {
 
 }
 
-#athletics, #wics-img, #a2f-img{
+#athletics, #wics-img, #a2f-img, #app-img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 
     /* to center things */
-    /*display: block;
+    display: block;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
 }
 
 #app-img {
