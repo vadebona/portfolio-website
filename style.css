@@ -31,23 +31,25 @@ p {
     font-size: 1.2em;
 }
 
-#name {
-    padding-bottom: 50px;
-    flex-wrap: wrap;
-    font-size: 5em;
-}
-
 .nav-content a {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
 }
 
 /* Desktop/Laptop Screens */
-@media only screen and (min-width :  1220px) {
+@media only screen and (min-width :  1000px) {
+    #name {
+        display: none;
+    }
+
+    .parallax {
+        background-image: url("landing2alt.png");
+    }
+
     #nav-menu {
         /* W3Schools Sidebar Navigation */
         height: 100%;
-        width: 275px;
+        width: 230px;
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
@@ -58,6 +60,7 @@ p {
 
     .nav-content a {
         padding-left: 70px;
+        position: relative;
         color: white;
         font-size: 1.5em;
         padding-bottom: 15px;
@@ -68,14 +71,15 @@ p {
         min-height: 100%;
         vertical-align: middle;
 
-        margin-left: 500px;
-        margin-right: 300px;
+        margin-left: 400px;
+        margin-right: 200px;
         padding-top: 100px;
         position: relative;
     }
 
     .closebtn {
         display: none;
+        /*position: absolute;*/
     }
 
 
@@ -83,8 +87,44 @@ p {
 
 
 /* iPad/Tablet Screens */
-@media only screen and (min-width: 768px) and (max-width: 1220px) {
+@media only screen and (min-width: 768px) and (max-width: 999px) {
     /* Mostly inherited from W3Schools Navigation: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay */
+    #name {
+        display: none;
+    }
+
+    .parallax {
+        background-image: url("landing2alt.png");
+    }
+
+
+    #nav-menu {
+        /* W3Schools Sidebar Navigation */
+        height: 100%;
+        width: 175px;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 300px;
+        padding-right: 15px;
+        background-color: black /*#8ed7ff*/;
+    }
+
+    .nav-content a {
+        padding-left: 70px;
+        position: relative;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+        display: block;
+    }
+
+    .closebtn {
+        display: none;
+    }
+
+
+    /*
     .overlay {
         height: 100%;
         width: 0;
@@ -105,9 +145,10 @@ p {
         display: block;
         transition: 0.3s;
     }
+*/
 
     section {
-        margin-left: 150px;
+        margin-left: 250px;
         margin-right: 150px;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -119,31 +160,34 @@ p {
     br {
         padding: 20px;
     }
-
-   .nav-content {
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 0px;
-    }
-
-    span {
-        font-size: 70px;
-        cursor: pointer;
-        float: right;
-        position: fixed;
-    }
-
-   .overlay, .closebtn {
-        position: fixed;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
-    }
 }
 
 
 @media only screen and (min-width: 450px) and (max-width: 767px) {
+    #name {
+        background-color: black;
+        color: white;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu {
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    span h1 {
+        margin: 0;
+    }
+
+    .parallax {
+        background-image: url("landingminialt.png");
+    }
+
     .overlay {
         height: 100%;
         width: 0;
@@ -166,7 +210,7 @@ p {
     }
 
     .overlay, .closebtn {
-        position: fixed;
+        position: absolute;
         top: 20px;
         right: 45px;
         font-size: 40px;
@@ -180,14 +224,8 @@ p {
 
     }
 
-    span {
-        font-size: 70px;
-        cursor: pointer;
-        float: right;
-        position: fixed;
-    }
-
     .nav-content {
+        position: relative;
         top: 25%;
         width: 100%;
         text-align: center;
@@ -196,22 +234,145 @@ p {
 
 }
 
-/* W3Schools Navigation: */
-@media only screen and (max-width: 450px) {
-    .overlay a {
-        font-size: 20px;
+@media only screen and (min-width: 300px) and (max-width: 449px) {
+    #name {
         background-color: black;
+        color: white;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu {
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    span h1 {
+        margin: 0;
+    }
+
+
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay, .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 40px;
+    }
+
+    section {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .parallax {
+        background-image: url("landingminialt.png");
+        padding: 0;
+    }
+
+    .nav-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+
+/* W3Schools Navigation: */
+/* Smart Phones*/
+/*
+@media only screen and (max-width: 450px) and (max-width: 766px){
+    .parallax {
+        background-image: url("landingminialt.png");
+    }
+
+    #name {
+        background-color: black;
+        color: white;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        font-size: 20px;
+    }
+
+    .overlay a {
+        padding: 4px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
     }
     .overlay, .closebtn {
+        position: absolute;
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
 
+    section {
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-content {
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
 
 }
-
-
+*/
 
 #nav-menu a:hover {
     color: #8ed7ff;
@@ -228,8 +389,6 @@ p {
     vertical-align: middle;
     top: 0;
 }
-
-
 
 p {
     padding: 0px;
@@ -272,8 +431,6 @@ i {
 /* W3Schools Parallaxing: https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .parallax {
-    background-image: url("m.jpg");
-
     height: 550px;
 
     background-attachment: fixed;
