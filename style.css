@@ -9,12 +9,12 @@ html,.main {
 }
 
 body {
-    font-family: 'Fauna One', serif;
+    font-family: 'Work Sans', sans-serif;/*'Fauna One', serif;*/
     background-color: lightgrey;
 }
 
 h1, h4 {
-    font-family: 'Sansita', sans-serif;
+    font-family: 'Eczar', serif;/*'Sansita', sans-serif;*/
 }
 
 h1 {
@@ -24,7 +24,13 @@ h1 {
 
 h4 {
     font-size: 1.7em;
-    padding-bottom: 10px;
+/*    padding-bottom: 10px;*/
+}
+
+h5 {
+    font-size: 1.1em;
+    font-style: oblique;
+    font-weight: bolder;
 }
 
 p {
@@ -53,9 +59,11 @@ p {
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
-        padding-top: 300px;
-        padding-right: 15px;
         background-color: black /*#8ed7ff*/;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-content a {
@@ -67,13 +75,22 @@ p {
         display: block;
     }
 
+/*
+    hr {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+*/
+
+
     section {
         min-height: 100%;
         vertical-align: middle;
 
         margin-left: 400px;
         margin-right: 200px;
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         position: relative;
     }
 
@@ -105,9 +122,12 @@ p {
         position: fixed;
         z-index: 1;
         overflow-x: hidden;
-        padding-top: 300px;
         padding-right: 15px;
         background-color: black /*#8ed7ff*/;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-content a {
@@ -117,6 +137,19 @@ p {
         font-size: 1.5em;
         padding-bottom: 15px;
         display: block;
+
+    }
+
+/*
+    hr {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+*/
+
+     #nav-break {
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
     .closebtn {
@@ -158,7 +191,7 @@ p {
     }
 
     br {
-        padding: 20px;
+        padding: 5px;
     }
 }
 
@@ -308,71 +341,7 @@ p {
 }
 
 
-/* W3Schools Navigation: */
-/* Smart Phones*/
-/*
-@media only screen and (max-width: 450px) and (max-width: 766px){
-    .parallax {
-        background-image: url("landingminialt.png");
-    }
 
-    #name {
-        background-color: black;
-        color: white;
-    }
-
-    .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: black;
-        overflow-x: hidden;
-        transition: 0.5s;
-        font-size: 20px;
-    }
-
-    .overlay a {
-        padding: 4px;
-        text-decoration: none;
-        font-size: 15px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    .overlay, .closebtn {
-        position: absolute;
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-
-    section {
-        margin-left: 70px;
-        margin-right: 70px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-    }
-
-    span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav-content {
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-
-}
-*/
 
 #nav-menu a:hover {
     color: #8ed7ff;
@@ -403,6 +372,10 @@ a:visited {
     color: blue;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #nav a:visited {
     color: white;
 }
@@ -413,11 +386,15 @@ a:visited {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    padding-left: 45px;
 }
 
 i {
-    padding-right: 20px;
+    padding-right: 50px;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #home-button {
@@ -440,10 +417,11 @@ i {
 
 }
 
-#athletics, #wics-img, #a2f-img, #app-img {
+#athletics, #wics-img, #a2f-img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    margin-bottom: 30px;
 
     /* to center things */
     display: block;
@@ -454,11 +432,50 @@ i {
 #app-img {
     width: 150px;
     height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 #ath-items, #app-items {
     padding-top: 50px;
+}
+
+.heading-bar {
+    margin-bottom: 20px;
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+#experience, #extracurriculars {
+    background-color: #77abff;
+}
+
+.icon-descrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+.icon-descrp ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon-descrp li {
+    padding-right: 30px;
+}
+
+.technologies ul{
+    list-style: none;
+}
+
+.technologies li{
+    padding-right: 20px;
 }
 
 /* #ath-items h4, #app-items h4 {

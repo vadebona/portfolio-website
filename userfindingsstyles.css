@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,.main {
+    height: 100%;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: lightgrey;
+}
+
+h1, h4 {
+    font-family: 'Eczar', serif;;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+
+.heading-bar {
+    margin-bottom: 20px;
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+ section {
+    min-height: 100%;
+    vertical-align: middle;
+
+    margin-left: 400px;
+    margin-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/* Navigation Menu */
+
+.nav-content a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+#back-arrow {
+    color: white;
+}
+
+#nav-menu {
+    /* W3Schools Sidebar Navigation */
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: black /*#8ed7ff*/;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-content a {
+    padding-left: 70px;
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    display: block;
+}
+
+#nav-menu a {
+    padding: 0px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+
+/*
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+*/
+
+
+section {
+    min-height: 100%;
+    vertical-align: middle;
+
+    margin-left: 400px;
+    margin-right: 200px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.closebtn {
+    display: none;
+    /*position: absolute;*/
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#nav a:visited {
+    color: white;
+}
+
+#nav-menu a:hover {
+    color: #8ed7ff;
+}
+
+#back-arrow:hover {
+    color: #8ed7ff;
+}
