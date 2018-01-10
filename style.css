@@ -380,6 +380,10 @@ a:hover {
     color: white;
 }
 
+#va-logo {
+    width: 70px;
+    height: 70px;
+}
 /* Font Awesome icon styling */
 .icons {
     display: flex;
