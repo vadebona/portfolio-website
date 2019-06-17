@@ -340,9 +340,6 @@ p {
 
 }
 
-
-
-
 #nav-menu a:hover {
     color: #8ed7ff;
 }
@@ -366,10 +363,11 @@ p {
 
 a:link {
     text-decoration: none;
+    color: #9135ce;
 }
 
 a:visited {
-    color: blue;
+    color: #9135ce;
 }
 
 a:hover {
@@ -421,8 +419,8 @@ i {
 
 }
 
-#athletics, #wics-img, #a2f-img {
-    border-radius: 50%;
+#athletics, #wics-img, #a2f-img, #awt-img {
+/*    border-radius: 50%;*/
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
@@ -442,7 +440,7 @@ i {
 }
 
 
-#ath-items, #app-items {
+#ath-items, #app-items, #awt-items {
     padding-top: 50px;
 }
 
