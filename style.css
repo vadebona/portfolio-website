@@ -10,7 +10,7 @@ html,.main {
 
 body {
     font-family: 'Work Sans', sans-serif;/*'Fauna One', serif;*/
-    background-color: lightgrey;
+    background-color: #a0beef;
 }
 
 h1, h4 {
@@ -20,6 +20,8 @@ h1, h4 {
 h1 {
     text-align: center;
     font-size: 3em;
+    border
+    border-color: black;
 }
 
 h4 {
@@ -451,9 +453,11 @@ i {
     border: none;
 }
 
+/*
 #experience, #extracurriculars {
     background-color: #77abff;
 }
+*/
 
 .icon-descrp {
     display: flex;
